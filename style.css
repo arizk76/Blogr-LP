@@ -1,0 +1,226 @@
+html {
+  /* margin: 0;
+  padding: 0; */
+
+  /* ## Colors */
+
+  /* ### Primary */
+
+  --lightRed: hsl(356, 100%, 66%);
+  --veryLightRed: hsl(355, 100%, 74%);
+  --VeryDarkBlue: hsl(208, 49%, 24%);
+
+  /* ### Neutral */
+
+  --White: hsl(0, 0%, 100%);
+  --grayishBlue: hsl(240, 2%, 79%);
+  --veryDarkGrayishBlue: hsl(207, 13%, 34%);
+  --veryDarkBlackBlue: hsl(240, 10%, 16%);
+
+  /* ### Gradient */
+
+  /* Background gradient - Intro/CTA mobile nav: */
+
+  --veryLightRed: hsl(13, 100%, 72%);
+  --lightRed: hsl(353, 100%, 62%);
+
+  /* Background gradient - body: */
+
+  --veryDarkGrayBlue: hsl(237, 17%, 21%);
+  --veryDarkDesaturatedBlue: hsl(237, 23%, 32%);
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Overpass', sans-serif;
+  /* font-size: 16px;
+  font-weight: 1.6875rem; */
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: var(--White);
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  text-decoration-style: none;
+}
+.button {
+  padding: 1rem 1.625rem;
+  border-radius: 2rem;
+  font-size: 0.875rem;
+  line-height: 0.875rem;
+  text-align: center;
+  font-weight: bold;
+}
+header {
+  width: auto;
+  height: 37.5rem;
+  position: relative;
+}
+
+.header__bg {
+  border-radius: 0 0 0 5rem;
+  background-image: linear-gradient(
+      170deg,
+      var(--veryLightRed),
+      var(--lightRed)
+    ),
+    url(./images/bg-pattern-intro.svg);
+  background-blend-mode: hue;
+  background-position: 35% 31%;
+  background-size: 365%;
+  background-repeat: no-repeat;
+  height: inherit;
+}
+
+.header__nav {
+  padding: 3.5rem 1.5rem;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.header__logo {
+  width: 5.25rem;
+  height: 2.125rem;
+}
+
+.header__links {
+  justify-content: space-between;
+
+  text-align: center;
+}
+
+.header__signup {
+  padding: 1.125rem 2.625rem;
+  margin-left: 1.875rem;
+  line-height: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--lightRed) !important;
+  background: var(--White);
+}
+.header__mobile-menu {
+  padding-top: 0.4375rem;
+}
+
+.hero {
+  padding: 0 2.5rem;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hero__intro {
+  padding-top: 4.25rem;
+  text-align: center;
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: var(--White);
+}
+.hero__text {
+  width: 100%;
+  color: var(--White);
+  text-align: center;
+  font-size: 1.2rem;
+  padding-top: 1.3rem;
+  padding-bottom: 3.25rem;
+}
+.hero__cta-1 {
+  margin-left: auto;
+  margin-right: 0.5rem;
+  line-height: 0.875rem;
+  font-size: 0.875rem;
+  color: var(--lightRed) !important;
+  background: var(--White);
+  border: 1px solid var(--White);
+}
+.hero__cta-2 {
+  margin-left: 0.5rem;
+  margin-right: auto;
+  line-height: 0.875rem;
+  font-size: 0.875rem;
+  border: 1px solid var(--White);
+}
+
+.section-1 {
+  height: 900px;
+}
+/*------------ Visibility Configuration Section--------------------*/
+
+/* Extra small devices (phones, 600px and down) */
+/* @media only screen and (max-width: 600px) {
+  .hide-for-mobile {
+    display: none;
+  }
+} */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  /* .hide-for-mobile {
+    display: none;
+  } */
+  .hero__intro {
+    font-size: 3.5rem;
+  }
+  .hero__text {
+    font-size: 1.5rem;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {
+  .hide-for-desktop {
+    display: none;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {
+  .hide-for-desktop {
+    display: none;
+  }
+} */
+
+@media only screen and (max-width: 1199.9px) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .hide-for-desktop {
+    display: none;
+  }
+  .header__bg {
+    background-position: 17% 52%;
+    background-size: auto;
+  }
+  .header__nav {
+    padding: 3.875rem 10.4375rem;
+  }
+  .header__logo {
+    width: 6.5625rem;
+    height: 2.6875rem;
+  }
+  .header__nav-l {
+    margin-top: auto;
+    width: 50%;
+    margin-bottom: auto;
+    margin-left: 0;
+  }
+  .header__nav-r {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .header__links {
+    padding: 0 2rem;
+  }
+}
