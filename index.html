@@ -26,17 +26,21 @@
     <div class="header__bg">
       <div class="header__nav">
         <a href="#" class="header__logo"><img src="./images/logo.svg" alt=""></a>
-        <div class="header__nav-l">
-          <a href="#" class="header__links hide-for-mobile">Product  <img src="./images/icon-arrow-light.svg" alt="Product Navigation Arrow"> </a>
-          <a href="#" class="header__links hide-for-mobile">Company  <img src="./images/icon-arrow-light.svg" alt="Product Navigation Arrow"> </a>
-          <a href="#" class="header__links hide-for-mobile">Connect  <img src="./images/icon-arrow-light.svg" alt="Product Navigation Arrow"> </a>
-        </div>
-        <div class="header__nav-r">
-          <a href="#" class="header__login hide-for-mobile">Login</a>
-          <a href="#" class="header__signup button hide-for-mobile">Sign Up</a>
-        </div>
-
         <a href="#" class="header__mobile-menu hide-for-desktop"> <img src="./images/icon-hamburger.svg" alt="Website Menu"></a>
+        <div class="header__nav-l hide-for-mobile">
+          <a href="#" id="product-link" class="header__links">Product</a><img id="product-dropdown" src="./images/icon-arrow-light.svg" alt="Product dropdown list">
+          <div id="product-drop-menu" class="product-menu"><ul><li><a href="#">Overview</a></li><li><a href="#">Pricing</a></li><li> <a href="#">Marketplace</a></li><li> <a href="#">Features</a></li><li> <a href="#">Integrations</a></li></ul></div>
+          <a href="#" id="company-link" class="header__links">Company</a><img id="company-dropdown" src="./images/icon-arrow-light.svg" alt="Company dropdown list">
+          <div id="company-drop-menu" class="company-menu"><a href="#"> <ul><li>About</li><li>Team</li><li>Blog</li><li>Careers</li></ul></a></div>
+          <a href="#" id="connect-link" class="header__links">Connect</a><img id="connect-dropdown"  src="./images/icon-arrow-light.svg" alt="Connect dropdown list">
+          <div id="connect-drop-menu" class="connect-menu"><a href="#"><ul><li>Contact</li><li>Newsletter</li><li>LinkedIn</li></ul></a></div>
+        </div>
+        <div class="header__nav-r hide-for-mobile">
+          <a href="#" id="header-login">Login</a>
+          <a href="#" id="header-signup" class= button">Sign Up</a>
+        </div><br>
+
+        
         
       </div>
       <section class="hero">
@@ -57,22 +61,9 @@
   </section>
 
 <!-- 
-  Product
 
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
 
-  Company
 
-  About
-  Team
-  Blog
-  Careers
-
-  Connect
 
   Contact
   Newsletter
@@ -137,5 +128,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Ahmed Rizk</a>.
   </div>
+  <script src="/script.js"></script>
 </body>
 </html>
