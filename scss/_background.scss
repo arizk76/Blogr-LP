@@ -1,0 +1,44 @@
+.header__bg {
+  position: absolute;
+  border-radius: 0 0 0 7rem;
+  background-image: url(../images/bg-pattern-intro.svg);
+  background-position: 35% 31%;
+  background-size: 365%;
+  background-repeat: no-repeat;
+  height: inherit;
+  height: 37.5rem;
+  width: 100%;
+  &::after {
+    z-index: -2;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+      150deg,
+      hsl(13, 100%, 72%),
+      hsl(353, 100%, 62%)
+    );
+    border-radius: 0 0 0 7rem;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 1199.9px) {
+  .header__bg {
+    background-position: 28% 43%;
+    background-size: 270%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media all and (min-width: 1200px) {
+  .header__bg {
+    background-position: 21% 53%;
+    background-size: 210%;
+  }
+}

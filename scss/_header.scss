@@ -1,0 +1,197 @@
+header {
+  position: relative;
+  width: auto;
+  height: 37.5rem;
+}
+
+.header__nav {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  padding: 4rem 10.5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media only screen and (max-width: 767.9px) {
+  .header__nav {
+    margin: auto;
+    padding: 4rem 2.5rem;
+    height: auto;
+  }
+
+  .header__logo {
+    width: 5.25rem;
+    height: 2.125rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199.9px) {
+  .header__nav {
+    padding: 4rem 6.75rem;
+  }
+  .header__logo {
+    width: 5.25rem;
+    height: 2.125rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .header__logo {
+    width: 6.5625rem;
+    height: 2.6875rem;
+  }
+  .header__nav-l {
+    position: absolute;
+    padding-left: 11.875rem;
+    text-align: left;
+  }
+  .header__nav-r {
+    padding-right: 0;
+    margin-right: 0;
+    text-align: right;
+  }
+  .header__links {
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    text-decoration: none;
+    color: var(--White);
+  }
+  #product-link {
+    padding-right: 0.3rem;
+  }
+  #company-link {
+    padding-right: 0.3rem;
+    padding-left: 1.875rem;
+  }
+  #connect-link {
+    padding-right: 0.3rem;
+    padding-left: 1.875rem;
+  }
+  .product-menu {
+    position: absolute;
+    display: none;
+    width: 10.625rem;
+    z-index: 2;
+    top: 3rem;
+    background: var(--White);
+    border-radius: 0.2rem;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+    transition-duration: 300ms;
+    left: 10.4rem;
+    ul {
+      display: block;
+      line-height: 2rem;
+      list-style-type: none;
+      text-align: left;
+      padding-left: 1.8rem;
+      color: var(--veryDarkDesaturatedBlue) !important;
+    }
+    li {
+      &:hover {
+        font-weight: bold;
+      }
+    }
+    a {
+      text-decoration: none;
+      color: var(--veryDarkDesaturatedBlue);
+    }
+  }
+  .company-menu {
+    position: absolute;
+    display: none;
+    width: 10.625rem;
+    z-index: 2;
+    top: 3rem;
+    background: var(--White);
+    border-radius: 0.2rem;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+    transition-duration: 300ms;
+    left: 16.7rem;
+    ul {
+      display: block;
+      line-height: 2rem;
+      list-style-type: none;
+      text-align: left;
+      padding-left: 1.8rem;
+      color: var(--veryDarkDesaturatedBlue) !important;
+    }
+    li {
+      &:hover {
+        font-weight: bold;
+      }
+    }
+    a {
+      text-decoration: none;
+      color: var(--veryDarkDesaturatedBlue);
+    }
+  }
+  .connect-menu {
+    position: absolute;
+    display: none;
+    width: 10.625rem;
+    z-index: 2;
+    top: 3rem;
+    background: var(--White);
+    border-radius: 0.2rem;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+    transition-duration: 300ms;
+    left: 23.8rem;
+    ul {
+      display: block;
+      line-height: 2rem;
+      list-style-type: none;
+      text-align: left;
+      padding-left: 1.8rem;
+      color: var(--veryDarkDesaturatedBlue) !important;
+    }
+    li {
+      &:hover {
+        font-weight: bold;
+      }
+    }
+    a {
+      text-decoration: none;
+      color: var(--veryDarkDesaturatedBlue);
+    }
+  }
+  .show {
+    display: block;
+  }
+  .rotate {
+    position: relative;
+    rotate: 180deg;
+    text-decoration: none;
+    margin: 0;
+  }
+  .underline {
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  #header-login {
+    padding-right: 3rem;
+    text-decoration: none;
+    color: var(--White);
+    &:hover {
+      font-weight: bold;
+    }
+  }
+  #header-signup {
+    padding: 0.7rem 1.625rem;
+    border-radius: 2rem;
+    text-align: center;
+    text-decoration: none;
+    line-height: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--lightRed);
+    background: var(--White);
+    &:hover {
+      color: var(--White);
+      background: var(--veryLightRed);
+      transition: 300ms;
+    }
+  }
+}

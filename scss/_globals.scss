@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Overpass', sans-serif;
+  box-sizing: border-box;
+}
+
+/*------------ Visibility Configuration Section--------------------*/
+
+@media only screen and (max-width: 1199.9px) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .hide-for-desktop {
+    display: none;
+  }
+}

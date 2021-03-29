@@ -1,0 +1,98 @@
+.hero {
+  position: relative;
+  padding: 0 2.5rem;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-between;
+
+  &__intro {
+    margin: 0 auto;
+    padding-top: 2.75rem;
+    text-align: center;
+    font-size: 2.1rem;
+    font-weight: 700;
+    color: var(--White);
+  }
+
+  &__text {
+    margin: 0 auto;
+    width: 92.5%;
+    color: var(--White);
+    text-align: center;
+    font-size: 1.1rem;
+    padding-top: 1.3rem;
+    padding-bottom: 3.25rem;
+  }
+
+  &__cta-1 {
+    margin-left: auto;
+    margin-right: 0.5rem;
+    padding: 0.875rem 1.35rem;
+    border-radius: 2.5rem;
+    font-size: 1rem;
+    line-height: normal;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bolder;
+    color: var(--lightRed);
+    background: var(--White);
+    border: 1px solid var(--White);
+    &:hover {
+      background: var(--veryLightRed);
+      color: var(--White);
+      transition: 300ms;
+    }
+  }
+
+  &__cta-2 {
+    margin-left: 0.5rem;
+    margin-right: auto;
+    padding: 0.875rem 1.35rem;
+    border-radius: 2.5rem;
+    font-size: 1rem;
+    line-height: normal;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bolder;
+    color: var(--White);
+    border: 1px solid var(--White);
+    &:hover {
+      color: hsl(353, 100%, 62%);
+      background: var(--White);
+      transition: 300ms;
+    }
+  }
+
+  @media only screen and (min-width: 529px) and (max-width: 767.9px) {
+    margin: auto;
+    width: 85%;
+    .hero__intro {
+      font-size: 2.875rem;
+    }
+    .hero__text {
+      font-size: 1.15rem;
+    }
+  }
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) and (max-width: 1199.9px) {
+    margin: auto;
+    width: 70%;
+    .hero__intro {
+      font-size: 3.125rem;
+    }
+    .hero__text {
+      font-size: 1.25rem;
+    }
+  }
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    .hero__intro {
+      font-size: 3.875rem;
+    }
+    .hero__text {
+      font-size: 1.5rem;
+    }
+  }
+}
