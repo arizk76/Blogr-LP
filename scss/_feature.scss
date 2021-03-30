@@ -1,0 +1,185 @@
+/*---- Mobile style for feature section ----- */
+.feature {
+  margin: 0;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: center;
+  &__intro {
+    order: 1;
+    flex: 1 0 50%;
+    margin: 0;
+    color: var(--veryDarkBlackBlue);
+    line-height: 1.2rem;
+    text-align: center;
+    font-size: 1.75rem;
+    color: hsl(208, 49%, 24%);
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+  }
+  &__image {
+    order: 2;
+    flex: 1 0 100%;
+    padding-top: 2rem;
+    background-image: url(/images/illustration-editor-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 20.625rem;
+    width: 340px;
+  }
+  &__section {
+    order: 3;
+    flex: 1 0 100%;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 0 1.5rem;
+    margin-bottom: 280px;
+  }
+
+  &__title {
+    margin: 0;
+    box-sizing: border-box;
+    width: 95%;
+    line-height: 1.8125rem;
+    text-align: center;
+    font-size: 1.75rem;
+    color: hsl(240, 10%, 16%);
+    padding: 0 1.5rem;
+    padding-top: 4rem;
+    padding-bottom: 1.875rem;
+  }
+
+  &__text {
+    margin: auto;
+    padding: 0 1.5rem;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    color: hsl(207, 13%, 34%);
+  }
+}
+
+/* --------- Desktop style ----------- */
+
+@media only screen and (min-width: 529px) and (max-width: 767.9px) {
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 1199.9px) {
+  .feature {
+    &__intro {
+      order: 1;
+      flex: 1 0 50%;
+      margin: 0;
+      color: var(--veryDarkBlackBlue);
+      line-height: 2.2rem;
+      text-align: center;
+      font-size: 2.3rem;
+      color: hsl(208, 49%, 24%);
+      padding-top: 6rem;
+      padding-bottom: 3rem;
+    }
+    &__image {
+      order: 2;
+      flex: 1 0 100%;
+      padding-top: 2rem;
+      background-image: url(/images/illustration-editor-desktop.svg);
+      background-size: 35%;
+      background-repeat: no-repeat;
+      background-position: center center;
+      height: 25.625rem;
+      width: 340px;
+    }
+    &__section {
+      order: 3;
+      flex: 1 0 100%;
+      text-align: center;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      padding: 0 1.5rem;
+      margin-bottom: 280px;
+    }
+
+    &__title {
+      margin: 0;
+      box-sizing: border-box;
+      width: 95%;
+      line-height: 1.8125rem;
+      text-align: center;
+      font-size: 1.875rem;
+      color: hsl(240, 10%, 16%);
+      padding: 0 1.5rem;
+      padding-top: 4rem;
+      padding-bottom: 1.875rem;
+    }
+
+    &__text {
+      margin: auto;
+      padding: 0 1.5rem;
+      width: 80%;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 1rem;
+      line-height: 1.6rem;
+      color: hsl(207, 13%, 34%);
+    }
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .feature {
+    margin-bottom: 265px;
+    height: auto;
+
+    &__image {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-image: url(/images/illustration-editor-desktop.svg);
+      background-position: -25% 40px;
+      background-size: 135%;
+      height: 62.25rem;
+      width: 50%;
+    }
+    &__intro {
+      box-sizing: border-box;
+      color: hsl(208, 49%, 24%);
+      width: 100%;
+      text-align: center;
+      font-size: 2.625rem;
+      padding-top: 10rem;
+    }
+
+    &__section {
+      position: relative;
+      display: grid;
+      grid-auto-flow: row;
+      justify-content: left;
+      padding: 0 1.5rem;
+    }
+    &__title {
+      text-align: left;
+      font-size: 1.875rem;
+      line-height: 1.8125rem;
+      color: hsl(208, 49%, 24%);
+      padding-left: 9rem;
+    }
+
+    &__text {
+      width: 540px;
+      height: 130px;
+      text-align: left;
+      padding-left: 9rem;
+      padding-bottom: 4rem;
+      font-size: 1.1rem;
+      color: hsl(207, 13%, 34%);
+      line-height: 2rem;
+    }
+  }
+}
