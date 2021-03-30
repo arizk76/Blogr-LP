@@ -1,5 +1,6 @@
 /*---- Mobile style for feature section ----- */
 .feature {
+  z-index: 1;
   margin: 0;
   position: relative;
   display: flex;
@@ -134,7 +135,6 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .feature {
-    margin-bottom: 265px;
     height: auto;
 
     &__image {

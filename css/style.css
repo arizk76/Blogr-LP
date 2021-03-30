@@ -2,14 +2,27 @@
   /* ## Colors */
   /* ### Primary */
   --lightRed: hsl(356, 100%, 66%);
+  /*----(CTA text)----*/
   --veryLightRed: hsl(355, 100%, 74%);
+  /*---(CTA hover background)-----*/
   --VeryDarkBlue: hsl(208, 49%, 24%);
+  /*----- (headings) ---- */
   /* ### Neutral */
   --White: hsl(0, 0%, 100%);
+  /*---- ( Text ) -----*/
   --grayishBlue: hsl(240, 2%, 79%);
+  /*-----(Footer text)----*/
   --veryDarkGrayishBlue: hsl(207, 13%, 34%);
+  /*----(body copy) ----*/
   --veryDarkBlackBlue: hsl(240, 10%, 16%);
-  /* Background gradient - body: */
+  /*----(footer background)-----*/
+  /*  ### Gradient  */
+  /*  Background gradient - Intro/CTA mobile nav  */
+  --veryLightRedG: hsl(13, 100%, 72%);
+  --lightRedG: hsl(353, 100%, 62%);
+  /* Background gradient - body:  */
+  --veryDarkGrayBlue: hsl(237, 17%, 21%);
+  --veryDarkDesaturatedBlue: hsl(237, 23%, 32%);
 }
 
 body {
@@ -69,7 +82,7 @@ body .test {
   background-size: 100%;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(150deg, #ff8f70, #ff3d54);
+  background-image: linear-gradient(150deg, var(--veryLightRedG), var(--lightRedG));
   border-radius: 0 0 0 7rem;
 }
 
@@ -194,14 +207,14 @@ header {
     list-style-type: none;
     text-align: left;
     padding-left: 1.8rem;
-    color: var(--veryDarkDesaturatedBlue) !important;
+    color: var(--veryDarkGrayishBlue) !important;
   }
   .product-menu li:hover {
     font-weight: bold;
   }
   .product-menu a {
     text-decoration: none;
-    color: var(--veryDarkDesaturatedBlue);
+    color: var(--veryDarkGrayishBlue);
   }
   .company-menu {
     position: absolute;
@@ -223,14 +236,14 @@ header {
     list-style-type: none;
     text-align: left;
     padding-left: 1.8rem;
-    color: var(--veryDarkDesaturatedBlue) !important;
+    color: var(--veryDarkGrayishBlue) !important;
   }
   .company-menu li:hover {
     font-weight: bold;
   }
   .company-menu a {
     text-decoration: none;
-    color: var(--veryDarkDesaturatedBlue);
+    color: var(--veryDarkGrayishBlue);
   }
   .connect-menu {
     position: absolute;
@@ -252,14 +265,14 @@ header {
     list-style-type: none;
     text-align: left;
     padding-left: 1.8rem;
-    color: var(--veryDarkDesaturatedBlue) !important;
+    color: var(--veryDarkGrayishBlue) !important;
   }
   .connect-menu li:hover {
     font-weight: bold;
   }
   .connect-menu a {
     text-decoration: none;
-    color: var(--veryDarkDesaturatedBlue);
+    color: var(--veryDarkGrayishBlue);
   }
   .show {
     display: block;
@@ -376,7 +389,7 @@ header {
 }
 
 .hero__cta-2:hover {
-  color: #ff3d54;
+  color: var(--veryLightRed);
   background: var(--White);
   -webkit-transition: 300ms;
   transition: 300ms;
@@ -419,6 +432,7 @@ header {
 
 /*---- Mobile style for feature section ----- */
 .feature {
+  z-index: 1;
   margin: 0;
   position: relative;
   display: -webkit-box;
@@ -602,7 +616,6 @@ header {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .feature {
-    margin-bottom: 265px;
     height: auto;
   }
   .feature__image {
@@ -650,5 +663,147 @@ header {
     font-size: 1.1rem;
     color: #4b5862;
     line-height: 2rem;
+  }
+}
+
+.benifet {
+  position: relative;
+  border-radius: 0 7rem 0 7rem;
+  width: 100%;
+  height: 39.125rem;
+}
+
+.benifet__bg {
+  position: absolute;
+  border-radius: 0 7rem 0 7rem;
+  background-image: url(../images/bg-pattern-circles.svg);
+  background-position: center -215px;
+  background-size: 165%;
+  background-repeat: no-repeat;
+  height: inherit;
+  width: 100%;
+}
+
+.benifet__bg::after {
+  z-index: -2;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(150deg, var(--veryDarkGrayBlue), var(--veryDarkDesaturatedBlue));
+  border-radius: 0 7rem 0 7rem;
+}
+
+.benifet__bg-phone {
+  position: absolute;
+  background-image: url(/images/illustration-phones.svg);
+  height: 100%;
+  width: 100%;
+  top: -300px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.benifet__content {
+  z-index: 1;
+  margin: 0;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 14.375rem;
+  color: var(--White);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.benifet__intro {
+  line-height: 2.825rem;
+  font-size: 2.6rem;
+  width: 100%;
+  text-align: center;
+}
+
+.benifet__text {
+  width: 95%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.8rem;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .benifet {
+    position: relative;
+    border-radius: 0 7rem 0 7rem;
+    width: 100%;
+    height: 25rem;
+  }
+  .benifet__bg {
+    position: absolute;
+    border-radius: 0 7rem 0 7rem;
+    background-image: url(../images/bg-pattern-circles.svg);
+    background-position: -237px -499px;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    height: inherit;
+    width: 100%;
+  }
+  .benifet__bg::after {
+    z-index: -2;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(150deg, var(--veryDarkGrayBlue), var(--veryDarkDesaturatedBlue));
+    border-radius: 0 7rem 0 7rem;
+  }
+  .benifet__bg-phone {
+    position: absolute;
+    background-image: url(/images/illustration-phones.svg);
+    height: 127%;
+    width: 100%;
+    top: -38px;
+    left: -330px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 36%;
+  }
+  .benifet__content {
+    margin: 0;
+    display: block;
+    padding-left: 45.875rem;
+    padding-top: 7.5rem;
+    color: var(--White);
+    width: 80%;
+    text-align: left;
+  }
+  .benifet__intro {
+    margin: 0;
+    line-height: 2.825rem;
+    font-size: 2.125rem;
+    width: 100%;
+    text-align: left;
+    padding-bottom: 2.5rem;
+  }
+  .benifet__text {
+    margin: 0;
+    width: 44%;
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.75rem;
   }
 }

@@ -59,7 +59,7 @@
     color: var(--White);
     border: 1px solid var(--White);
     &:hover {
-      color: hsl(353, 100%, 62%);
+      color: var(--veryLightRed);
       background: var(--White);
       transition: 300ms;
     }
